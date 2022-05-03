@@ -21,6 +21,7 @@ class User extends Authenticatable
         'name',
         'email',
         'password',
+        'is_admin'
     ];
 
     /**
@@ -40,5 +41,21 @@ class User extends Authenticatable
      */
     protected $casts = [
         'email_verified_at' => 'datetime',
+        'is_admin' => 'boolean',
     ];
+
+    public function loans()
+    {
+        return $this->hasMany(Loan::class);
+    }
+
+
+    public function is_admin()
+    {
+        if($this->is_admin){
+            return true;
+        }
+
+        return false;
+    }
 }
