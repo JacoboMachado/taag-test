@@ -51,7 +51,7 @@ php artisan db:seed
 
 ### De Escenario(Seeds)
 - Se crea para la prueba 10 estantes con identificativos de la 'A' a la 'J'.
-- Se crea un usuario administrador (admin@admin.com) y 5 usuarios prestatarios (user1@prueba.com hasta user5@prueba.com) todos con misma password (1233clave).
+- Se crea un usuario administrador (admin@admin.com) y 5 usuarios prestatarios (user1@prueba.com hasta user5@prueba.com) todos con misma password (123clave).
 - Se generan 30 autores, 50 libros y 100 ejemplares aleatorios.
 
 
